@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon EC2 Summary</title>
+    <style>
+        body {
+            font-family: cursive;
+            background-color: orange;
+            margin: 20px;
+            padding: 20px;
+            font-size: 14px;
+        }
+        .container {
+            background: orange;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            background-color: lightblue;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        h1 {
+            color: #9b59b6;
+            text-align: center;
+            font-size: 22px;
+        }
+        h2 {
+            color: #9b59b6;
+            font-size: 18px;
+        }
+        .highlight {
+            color: #9b59b6;
+            font-weight: bold;
+        }
+        .example {
+            background: #dff9fb;
+            padding: 10px;
+            border-left: 5px solid #2980b9;
+            margin-top: 10px;
+        }
+        ul {
+            list-style-type: square;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Amazon EC2 - Simplified Explanation</h1>
+        
+        <h2>Why Use EC2?</h2>
+        <ul>
+            <li><span class="highlight">Flexibility & Speed:</span> Start a server in minutes instead of weeks.</li>
+            <li><span class="highlight">Cost-Effective:</span> Pay only for what you use, no upfront hardware costs.</li>
+            <li><span class="highlight">Scalability:</span> Easily increase or decrease server size based on needs.</li>
+        </ul>
+        
+        <h2>How Does EC2 Work?</h2>
+        <ul>
+            <li><span class="highlight">Virtual Machines on AWS Servers:</span> AWS manages the physical servers, and you use virtual machines.</li>
+            <li><span class="highlight">Multitenancy (Sharing Hardware):</span> Multiple virtual servers share a physical machine securely.</li>
+            <li><span class="highlight">Customization:</span> Choose OS (Windows/Linux), install software, and control networking.</li>
+        </ul>
+        
+        <div class="example">
+            <h2>Example:</h2>
+            Imagine you run an <strong>online video streaming service</strong>. Instead of buying physical servers, you can launch <span class="highlight">EC2 instances</span> to handle customer requests. If demand spikes during a major event, you can <span class="highlight">quickly add more servers</span>. When demand drops, you <span class="highlight">shut them down</span> to save money.
+        </div>
+        
+        <h2>Scaling Options:</h2>
+        <ul>
+            <li><span class="highlight">Vertical Scaling:</span> Upgrade an existing server by adding more CPU and memory.</li>
+            <li><span class="highlight">Horizontal Scaling:</span> Add more servers to handle increased load.</li>
+        </ul>
+        
+        <h2>Key Benefits:</h2>
+        <ul>
+            <li>✅ No need to manage physical servers.</li>
+            <li>✅ Start and stop instances whenever needed.</li>
+            <li>✅ Secure and isolated virtual machines.</li>
+            <li>✅ Pay-as-you-go pricing model.</li>
+        </ul>
+        
+        <p><strong>EC2 makes computing <span class="highlight">faster, cheaper, and more efficient</span>, allowing businesses to <span class="highlight">focus on their applications</span> instead of managing infrastructure.</strong> 🚀</p>
+    </div>
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How Amazon EC2 Works</title>
+    <style>
+        body {
+            font-family:cursive;
+            background-color: #f4f4f4;
+            margin: 20px;
+            padding: 20px;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #FF5733;
+            text-align: center;
+        }
+        h2 {
+            color: #3498db;
+        }
+        .highlight {
+            color: #9b59b6;
+            font-weight: bold;
+        }
+        .step {
+            background: #dff9fb;
+            padding: 10px;
+            border-left: 5px solid #2980b9;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>How Amazon EC2 Works</h1>
+        
+        <div class="step">
+            <h2>1.Launch</h2>
+            <p>First, you <strong>launch an instance</strong>. Choose a template that includes an <span class="highlight">operating system</span>, <span class="highlight">application server</span>, or other software. Select the <span class="highlight">instance type</span>, which defines the hardware configuration.</p>
+            <p>Before launching, set up <span class="highlight">security settings</span> to control incoming and outgoing network traffic.</p>
+        </div>
+        
+        <div class="step">
+            <h2>2.Connect</h2>
+            <p>Next, <strong>connect to the instance</strong>. There are different ways to connect:</p>
+            <ul>
+                <li>Programs and applications can connect directly to exchange data.</li>
+                <li>Users can log in and access the desktop interface.</li>
+            </ul>
+        </div>
+        
+        <div class="step">
+            <h2>3.Use</h2>
+            <p>Once connected, you can <strong>start using the instance</strong>. You can:</p>
+            <ul>
+                <li>Run commands to install software.</li>
+                <li>Add and manage storage.</li>
+                <li>Copy, organize, and modify files.</li>
+            </ul>
+        </div>
+        
+        <p><strong>Amazon EC2 makes it easy to launch, connect, and use virtual servers on demand!</strong> 🚀</p>
+    </div>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EC2 Instance Types Explained</title>
+    <style>
+        body {
+            font-family: cursive;
+            background-color: #FF9900;
+            margin: 20px;
+            padding: 20px;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        h2 {
+            color: #333;
+        }
+        .highlight {
+            color: #9b59b6;
+            font-weight: bold;
+        }
+        .example {
+            background: #dff9fb;
+            padding: 10px;
+            border-left: 5px solid #2980b9;
+            margin-top: 10px;
+        }
+        ul {
+            list-style-type: square;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>EC2 Instance Types - Simple Explanation</h1>
+        
+        <h2>1. General Purpose Instances</h2>
+        <p>These instances provide a balance of compute, memory, and networking. They are great for:</p>
+        <ul>
+            <li>Application servers</li>
+            <li>Gaming servers</li>
+            <li>Backend servers for enterprise applications</li>
+            <li>Small and medium databases</li>
+        </ul>
+        <div class="example">
+            <p><b>Example</b>: If your application needs equal amounts of compute, memory, and network power, a general-purpose instance is a good choice.</p>
+        </div>
+        
+        <h2>2. Compute Optimized Instances</h2>
+        <p>Best for applications that need high-performance processing power. Used for:</p>
+        <ul>
+            <li>High-performance web servers</li>
+            <li>Compute-intensive application servers</li>
+            <li>Dedicated gaming servers</li>
+            <li>Batch processing workloads</li>
+        </ul>
+        <div class="example">
+            <p><b>Example</b>: If your app needs to process lots of transactions or handle intense computing tasks, choose compute optimized instances.</p>
+        </div>
+        
+        <h2>3. Memory Optimized Instances</h2>
+        <p>Designed for workloads that need to process large amounts of data in memory. Great for:</p>
+        <ul>
+            <li>High-performance databases</li>
+            <li>Real-time processing of large datasets</li>
+        </ul>
+        <div class="example">
+            <p><b>Example</b>: If your application requires loading large datasets before running, memory optimized instances are a great fit.</p>
+        </div>
+        
+        <h2>4. Accelerated Computing Instances</h2>
+        <p>These use hardware accelerators to boost processing speed. Ideal for:</p>
+        <ul>
+            <li>Graphics processing</li>
+            <li>Game streaming</li>
+            <li>Application streaming</li>
+            <li>Data pattern matching</li>
+        </ul>
+        <div class="example">
+            <p><b>Example</b>: If you need fast graphics rendering or AI computations, go for accelerated computing instances.</p>
+        </div>
+        
+        <h2>5. Storage Optimized Instances</h2>
+        <p>Designed for applications that need fast, large-scale storage. Best for:</p>
+        <ul>
+            <li>Distributed file systems</li>
+            <li>Data warehousing applications</li>
+            <li>High-frequency online transaction processing (OLTP) systems</li>
+        </ul>
+        <div class="example">
+            <p>Example: If your application has a high need for input/output operations per second (IOPS), storage optimized instances are the best choice.</p>
+        </div>
+        
+        <p><strong>Each EC2 instance type is designed for specific workloads. Choosing the right one improves performance and efficiency! 🚀</strong></p>
+    </div>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon EC2 Pricing</title>
+    <style>
+        body {
+            font-family: cursive;
+            background-color: #FF9900;
+            margin: 20px;
+            padding: 20px;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            background: #333;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .highlight {
+            color: #9b59b6;
+            font-weight: bold;
+        }
+        .example {
+            background: #dff9fb;
+            padding: 10px;
+            border-left: 5px solid #2980b9;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Amazon EC2 Pricing Explained</h1>
+        
+        <h2>1. On-Demand</h2>
+        <p>Pay only for the time your instance runs. No upfront cost, no long-term commitment.</p>
+        <div class="example">
+            <p><strong>Example:</strong> Like renting a car for a few hours without any contract.</p>
+        </div>
+        
+        <h2>2. Savings Plan</h2>
+        <p>Commit to a fixed usage (e.g., $10/hour) for 1 or 3 years to save up to 72%.</p>
+        <div class="example">
+            <p><strong>Example:</strong> Like a gym membership—you pay monthly for a better deal.</p>
+        </div>
+        
+        <h2>3. Reserved Instances</h2>
+        <p>Get up to 75% discount by committing to a 1 or 3-year term.</p>
+        <div class="example">
+            <p><strong>Example:</strong> Like pre-paying for a hotel room for a year to get a big discount.</p>
+        </div>
+        
+        <h2>4. Spot Instances</h2>
+        <p>Get up to 90% off if you use spare capacity, but AWS may reclaim it anytime.</p>
+        <div class="example">
+            <p><strong>Example:</strong> Like getting a cheap last-minute flight ticket, but you may get bumped.</p>
+        </div>
+        
+        <h2>5. Dedicated Hosts</h2>
+        <p>Rent a full physical server for compliance or security needs.</p>
+        <div class="example">
+            <p><strong>Example:</strong> Like buying a private jet instead of flying commercial.</p>
+        </div>
+        
+        <p><strong>Choosing the right pricing option helps save costs and optimize performance! 🚀</strong></p>
+    </div>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Scalability in AWS</title>
+</head>
+<body>
+<div class="container">
+    <h1>Scalability in AWS</h1>
+    <p>Scalability means starting with only what you need and adding more when required. AWS lets you scale automatically, so you only pay for what you use.</p>
+
+    <h2>Amazon EC2 Auto Scaling</h2>
+    <p>This AWS service automatically adds or removes EC2 instances when demand changes. This ensures your application runs smoothly without wasting money.</p>
+
+    <h3>Example: Why Scaling is Important</h3>
+    <p>Imagine a coffee shop with only one barista. If many customers come at once, the service becomes slow. If the shop could instantly hire more baristas during busy times and reduce them when it’s quiet, it would be efficient. EC2 Auto Scaling does something similar for cloud applications.</p>
+
+    <h2>Types of Scaling</h2>
+    <img src="image1.png" alt="Graph showing demand and unused capacity over a week" width="500">
+    <ul>
+        <li><strong>Dynamic Scaling</strong> – Adds or removes EC2 instances when demand changes.</li>
+        <ul>
+            <li>Example: If a website gets more visitors suddenly, more EC2 instances will start.</li>
+        </ul>
+        <li><strong>Predictive Scaling</strong> – Forecasts future demand and adjusts EC2 instances.</li>
+        <ul>
+            <li>Example: If data shows that traffic increases every evening, EC2 instances will scale up before that happens.</li>
+        </ul>
+    </ul>
+    <p>Using both together makes scaling even better.</p>
+
+    <h2>Setting Up Auto Scaling</h2>
+    <p>When configuring an <strong>Auto Scaling group</strong>, you set:</p>
+    <img src="image2.png" alt="Illustration of Amazon EC2 Auto Scaling" width="500">
+    <ul>
+        <li><strong>Minimum instances</strong> – The least number of EC2 instances always running.</li>
+        <ul>
+            <li>Example: You set at least 1 instance to keep the service active.</li>
+        </ul>
+        <li><strong>Desired instances</strong> – The usual number of EC2 instances you want.</li>
+        <ul>
+            <li>Example: You set 2 instances so there’s always enough power.</li>
+        </ul>
+        <li><strong>Maximum instances</strong> – The most EC2 instances allowed.</li>
+        <ul>
+            <li>Example: You set 4 instances to handle traffic spikes.</li>
+        </ul>
+    </ul>
+    <p>Since you only pay for what you use, this method is cost-effective.</p>
+</body>
+</html>
